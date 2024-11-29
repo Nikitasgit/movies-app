@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>TP 5 : Recherche de films</title>
+  </head>
+  <body>
+    <h4 hidden id="error"></h4>
+    <h1>Recherche de films</h1>
+    <form id="form">
+      <label for="search-input">Recherchez un film:</label>
+      <input id="search-input" type="search" />
+      <button id="submit-button" type="submit">Rerchercher</button>
+      <select name="languages" id="languages">
+        <option value="fr-FR">FR</option>
+        <option value="en-US">EN</option>
+      </select>
+    </form>
+    <section class="movies-section">
+      <ul id="pages"></ul>
+      <div id="films-container"></div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
